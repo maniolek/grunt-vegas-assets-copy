@@ -82,6 +82,10 @@ module.exports = function(grunt) {
           dest = isExpandedPair ? dest : path.join(dest, src);
         }
 
+        if (filePair.orig.cwd_truncate) {
+          dest = dest.replace(/\/[a-zA-Z0-9\.\-\_]*\/assets/gmi, '');
+        }
+
         if (grunt.file.isDir(src)) {
           grunt.verbose.writeln('Creating ' + chalk.cyan(dest));
           grunt.file.mkdir(dest);

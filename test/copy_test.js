@@ -45,6 +45,16 @@ exports.copy = {
     test.done();
   },
 
+  cwdTruncate: function(test) {
+    test.expect(1);
+
+    var actual = fs.readdirSync('tmp/test_cwd_truncate').sort();
+    var expected = fs.readdirSync('test/expected/test_cwd_truncate').sort();
+    test.deepEqual(expected, actual, 'should create a truncate dir structure');
+
+    test.done();
+  },
+
   single: function(test) {
     test.expect(1);
 

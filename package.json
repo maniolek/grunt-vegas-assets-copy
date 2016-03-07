@@ -1,12 +1,19 @@
 {
-  "name": "grunt-contrib-copy",
-  "description": "Copy files and folders",
-  "version": "0.8.2",
+  "name": "grunt-vegas-assets-copy",
+  "description": "Copy files and folders with assets",
+  "version": "0.1",
+  "homepage": "https://github.com/maniolek/grunt-vegas-assets-copy",
   "author": {
-    "name": "Grunt Team",
-    "url": "http://gruntjs.com/"
+    "name": "Mateusz Aniolek",
+    "email": "matty201@gmail.com"
   },
-  "repository": "gruntjs/grunt-contrib-copy",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/maniolek/grunt-vegas-assets-copy.git"
+  },
+  "bugs": {
+    "url": "https://github.com/maniolek/grunt-vegas-assets-copy/issues"
+  },
   "license": "MIT",
   "engines": {
     "node": ">=0.10.0"
@@ -32,6 +39,5 @@
   ],
   "files": [
     "tasks"
-  ],
-  "appveyor_id": "fe6l517l01ys2y86"
+  ]
 }

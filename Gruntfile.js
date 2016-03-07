@@ -59,6 +59,18 @@ module.exports = function(grunt) {
         ]
       },
 
+      cwdTruncate: {
+        files: [
+          {
+            expand: true,
+            cwd_truncate: true,
+            cwd: 'test/fixtures/folder_cwd',
+            src: '*/assets/**',
+            dest: 'tmp/test_cwd_truncate/'
+          }
+        ]
+      },
+
       single: {
         files: [
           {src: ['test/fixtures/test.js'], dest: 'tmp/single.js'}
