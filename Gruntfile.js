@@ -38,7 +38,7 @@ module.exports = function(grunt) {
     },
 
     // Configuration to be run (and then tested).
-    copy: {
+    "vegas-assets-copy": {
       main: {
         files: [
           {expand: true, cwd: 'test/fixtures', src: ['*.js'], dest: 'tmp/copy_test_files/'},
@@ -149,7 +149,7 @@ module.exports = function(grunt) {
 
   // Whenever the "test" task is run, first clean the "tmp" dir, then run this
   // plugin's task(s), then test the result.
-  grunt.registerTask('test', ['jshint', 'clean', 'copy', 'nodeunit']);
+  grunt.registerTask('test', ['jshint', 'clean', 'vegas-assets-copy', 'nodeunit']);
 
   // By default, lint and run all tests.
   grunt.registerTask('default', ['test', 'build-contrib']);

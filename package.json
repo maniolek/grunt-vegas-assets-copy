@@ -1,7 +1,7 @@
 {
   "name": "grunt-vegas-assets-copy",
   "description": "Copy files and folders with assets",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "homepage": "https://github.com/maniolek/grunt-vegas-assets-copy",
   "author": {
     "name": "Mateusz Aniolek",

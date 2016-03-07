@@ -1,6 +1,6 @@
 /*
- * grunt-contrib-copy
- * http://gruntjs.com/
+ * grunt-vegas-assets-copy
+ * based on grunt-contrib-copy (http://gruntjs.com/)
  *
  * Copyright (c) 2016 Chris Talkington, contributors
  * Licensed under the MIT license.
@@ -16,7 +16,7 @@ module.exports = function(grunt) {
   var fileSyncCmp = require('file-sync-cmp');
   var isWindows = process.platform === 'win32';
 
-  grunt.registerMultiTask('copy', 'Copy files.', function() {
+  grunt.registerMultiTask('vegas-assets-copy', 'Copy files.', function() {
 
     var options = this.options({
       encoding: grunt.file.defaultEncoding,
